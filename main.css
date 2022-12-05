@@ -1,0 +1,218 @@
+main, nav, section, footer {display: block;}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    }
+
+header, footer{
+    background-color: rgb(117, 47, 4);
+    padding: 3%;
+    color: #f0f0f0;
+}
+span{
+    display: inline-block;
+}
+
+.top-nav{
+    
+    text-decoration: none;
+    color: #fff;
+    font-size: 120%;
+    display: inline-flex;
+    text-align:left; 
+}
+.top-nav ul{
+    padding-left: 0%;
+}
+.nav-items a{
+    text-decoration: none;
+    color: #181a1a;
+}
+  
+.nav-items{
+    float: left;
+    color:rgb(86, 15, 15);
+    list-style: none;
+    padding : 0 10px 0 10px;
+    margin: 0%;
+}
+
+
+#mainParagraph{
+    color: #090607;
+    background-image: url("images/cup.jpg");
+}
+.submit-button{
+    background-color:rgb(53, 71, 53);
+    padding: 1%;
+    font-size: larger;
+    display:flex;
+    justify-content: center;
+    border-radius: 5%;
+    height: 5%;
+    width: 20%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+.image{
+    width: 40%;
+    max-width: 40%;
+
+}
+.side_heading{
+    color: aliceblue;
+}
+
+
+h1,h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    margin: 0;
+}
+h2{
+    font-size: 1.8em;
+    color: #090607;
+}
+#first_para{
+    color:#090607;
+}
+
+#hero{
+    background-color: #090607;
+    padding: 2%;
+    margin-bottom: 1em;
+}
+
+
+
+
+/*middle section*/
+.Three_format{
+    border: 2px solid #f9966c;
+    padding: 2%;
+    margin: 10% 0;
+    background-color: #0d0b0b;
+    color: aliceblue;
+}
+/* group table*/
+
+table,td{
+    border: 0.5px solid black;
+    border-collapse: collapse;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+
+th{
+    background-color: #0d0b0b;
+    color: #f0f0f0;
+    padding: 5px 15px;
+
+}
+td{
+    padding: 5px 15px;
+    padding-left: 15px;
+}
+tr:hover{
+    background-color: rgb(214, 28, 28);
+}
+
+
+/* Booking page css*/
+
+
+
+.Booking_section{
+    justify-content: center;
+    text-align: center;
+    background-image: url("images/grg.jpg");
+
+}
+.form-text-input{
+    margin: 5px 0;
+    padding: 3px;
+   
+}
+label{
+    display: inline-block;
+    width: 220px;
+    text-align: left;
+}
+
+
+.form-info{
+    display: flex;
+    align-items: center;
+    margin: 10px 1em;
+    text-align: right;
+}
+.form-info label {
+    flex-basis: 30%;
+    white-space: nowrap;
+    padding-left: 10%;
+    width: 220px;
+}
+
+.name{
+    padding-left: 1px;
+    padding-right: 10px;
+    
+}
+
+.phone{
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.red-dot{
+    color: red;
+}
+
+
+
+.submit-button2{
+   justify-content: center;
+   align-items: center;
+    background-color:#f0b054;
+    padding: 4px 5px;
+    font-size: medium;
+    border-color: #f0b054;
+    border-radius: 4px;
+    height: 3%;
+    width: 13%;
+
+
+}
+
+@media screen and (min-width: 900px){
+    #hero{
+        display: grid;
+        grid-template-columns: 45% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: "heroImg heroPara";
+        column-gap: 2%;
+    }
+
+    #hero img{
+        grid-area: heroImg;  
+    }
+    
+    #mainParagraph{
+        grid-area: heroPara;
+    }
+  
+}
+
+
+
